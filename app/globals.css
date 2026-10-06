@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Roboto Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f5ef;
+  color: #111318;
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+.proof-grid {
+  background-image:
+    linear-gradient(rgba(17, 19, 24, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 19, 24, 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.scanline {
+  background-image: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.04) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
